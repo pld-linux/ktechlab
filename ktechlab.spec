@@ -1,8 +1,11 @@
+# TODO:
+#   fix desktop and %doc
+#
 Summary:	An integrated circuit simulator
 Summary(pl):	Symulator uk³adów elektronicznych
 Name:		ktechlab
 Version:	0.3
-Release:	1
+Release:	0.1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://ktechlab.org/download/%{name}-%{version}.tar.bz2
