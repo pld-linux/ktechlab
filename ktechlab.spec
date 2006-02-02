@@ -11,7 +11,8 @@ Group:		X11/Applications
 Source0:	http://ktechlab.org/download/%{name}-%{version}.tar.bz2
 # Source0-md5:	0cc2f2054f7906780c8580560f04b0ff
 URL:		http://ktechlab.org/
-BuildRequires:	kdelibs-devel >= 3.2
+BuildRequires:	kdelibs-devel >= 9:3.2
+BuildRequires:	rpmbuild(macros) >= 1.129
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -31,7 +32,8 @@ mikrokontrolerów PIC.
 %setup -q
 
 %build
-%configure
+%configure \
+	--with-qt-libraries=%{_libdir}
 
 %{__make} \
         CC="%{__cc}"
@@ -40,17 +42,19 @@ mikrokontrolerów PIC.
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_desktopdir}
-mv $RPM_BUILD_ROOT%{_datadir}/applnk/Development/ktechlab.desktop $RPM_BUILD_ROOT%{_desktopdir}
+	DESTDIR=$RPM_BUILD_ROOT \
+	kde_htmldir=%{_kdedocdir} \
+	kde_libs_htmldir=%{_kdedocdir} \
+	kdelnkdir=%{_desktopdir}
+
+%find_lang %{name} --with-kde
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files
+%files -f %{name}.lang
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
-%doc %{_datadir}/doc/HTML/en/%{name}/*
 %{_datadir}/apps/%{name}
 %{_datadir}/config.kcfg/%{name}.kcfg
 %{_datadir}/apps/katepart/syntax/microbe.xml
