@@ -42,7 +42,7 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_desktopdir}
-mv $RPM_BUILD_ROOT%{_datadir}/applnk/Development/ktechlab.desktop $RPM_BUILD_ROOT%{_desktopdir}/
+mv $RPM_BUILD_ROOT%{_datadir}/applnk/Development/ktechlab.desktop $RPM_BUILD_ROOT%{_desktopdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
