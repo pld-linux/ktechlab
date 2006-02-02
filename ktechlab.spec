@@ -11,7 +11,11 @@ Group:		X11/Applications
 Source0:	http://ktechlab.org/download/%{name}-%{version}.tar.bz2
 # Source0-md5:	0cc2f2054f7906780c8580560f04b0ff
 URL:		http://ktechlab.org/
+BuildRequires:	expat
 BuildRequires:	kdelibs-devel >= 9:3.2
+BuildRequires:	libjpeg
+BuildRequires:	libpng
+BuildRequires:	perl
 BuildRequires:	rpmbuild(macros) >= 1.129
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
