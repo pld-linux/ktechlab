@@ -2,7 +2,7 @@
 #   fix desktop and %doc
 #
 Summary:	An integrated circuit simulator
-Summary(pl):	Symulator uk³adów elektronicznych
+Summary(pl.UTF-8):   Symulator ukÅ‚adÃ³w elektronicznych
 Name:		ktechlab
 Version:	0.3
 Release:	0.1
@@ -23,11 +23,11 @@ linear, nonlinear and reactive), simulation and debugging of PIC
 microcontrollers via gpsim, and comes with its own closely-linked and
 complementary high level languages: FlowCode and Microbe.
 
-%description -l pl
-KTechlab jest ¶rodowiskiem do tworzenia obwodów elektronicznych i
-mikrokontrolerów. Mo¿e symulowaæ ró¿ne komponenty (logiczne, liniowe,
-nieliniowe itp). Mo¿e tak¿e poprzez bibliotekê gpsim symulowaæ pracê
-mikrokontrolerów PIC.
+%description -l pl.UTF-8
+KTechlab jest Å›rodowiskiem do tworzenia obwodÃ³w elektronicznych i
+mikrokontrolerÃ³w. MoÅ¼e symulowaÄ‡ rÃ³Å¼ne komponenty (logiczne, liniowe,
+nieliniowe itp). MoÅ¼e takÅ¼e poprzez bibliotekÄ™ gpsim symulowaÄ‡ pracÄ™
+mikrokontrolerÃ³w PIC.
 
 %prep
 %setup -q
