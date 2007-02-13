@@ -2,7 +2,7 @@
 #   fix desktop and %doc
 #
 Summary:	An integrated circuit simulator
-Summary(pl.UTF-8):   Symulator układów elektronicznych
+Summary(pl.UTF-8):	Symulator układów elektronicznych
 Name:		ktechlab
 Version:	0.3
 Release:	0.1
