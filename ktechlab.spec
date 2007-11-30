@@ -4,7 +4,7 @@
 Summary:	An integrated circuit simulator
 Summary(pl.UTF-8):	Symulator układów elektronicznych
 Name:		ktechlab
-Version:	0.3
+Version:	0.3.6
 Release:	0.1
 License:	GPL
 Group:		X11/Applications
@@ -30,7 +30,7 @@ nieliniowe itp). Może także poprzez bibliotekę gpsim symulować pracę
 mikrokontrolerów PIC.
 
 %prep
-%setup -q
+%setup -q -n %{name}-0.3
 
 %build
 %configure \
