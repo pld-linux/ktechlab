@@ -8,7 +8,7 @@ Version:	0.3.6
 Release:	0.1
 License:	GPL
 Group:		X11/Applications
-Source0:	http://ktechlab.org/download/%{name}-%{version}.tar.bz2
+Source0:	http://dl.sourceforge.net/ktechlab/%{name}-%{version}.tar.bz2
 # Source0-md5:	0cc2f2054f7906780c8580560f04b0ff
 Patch0:		%{name}-gcc4.patch
 URL:		http://ktechlab.org/
