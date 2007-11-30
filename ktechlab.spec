@@ -10,6 +10,7 @@ License:	GPL
 Group:		X11/Applications
 Source0:	http://ktechlab.org/download/%{name}-%{version}.tar.bz2
 # Source0-md5:	0cc2f2054f7906780c8580560f04b0ff
+Patch0:		%{name}-gcc4.patch
 URL:		http://ktechlab.org/
 BuildRequires:	kdelibs-devel >= 9:3.2
 BuildRequires:	perl-base
@@ -31,6 +32,7 @@ mikrokontrolerów PIC.
 
 %prep
 %setup -q -n %{name}-0.3
+%patch0 -p1
 
 %build
 %configure \
