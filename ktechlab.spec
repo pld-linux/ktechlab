@@ -32,7 +32,7 @@ mikrokontrolerów PIC.
 
 %prep
 %setup -q -n %{name}-0.3
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %configure \
